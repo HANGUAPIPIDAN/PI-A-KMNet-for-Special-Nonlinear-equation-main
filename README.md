@@ -19,10 +19,8 @@ All experiment folders use the following names for the four compared methods:
 
 ### `Bad-Boussinesq-equation/`
 
-- **`solitary-wave and rogue-wave/`** — forward problems with analytical solutions:
-  - `3rd-soliton/` — third-order solitary wave solution (collocation points in `*-residualpoints/`, results in `*-results/` under the 5,000 / 10,000 / 30,000 trainable-parameter regimes, degree-4 KAN);
-  - `rogue/` — first-order rogue wave solution (50,000 collocation points);
-  - `soliton-rogue/` — interaction solution between solitary waves and rogue waves.
+- **`solitary-wave/`** — forward problem with an analytical solution:
+  - `3rd-soliton/` — third-order solitary wave solution (collocation points in `*-residualpoints/`, results in `*-results/` under the 5,000 / 10,000 / 30,000 trainable-parameter regimes, degree-4 KAN).
 - **`gauss wave packet/`** — forward problems **without** analytical solutions:
   - `BQ-gauss/` — single Gaussian wave packet; the four methods plus `input data/` (fixed LHS collocation points) and `spectral method/` (band-limited regularized Fourier pseudo-spectral reference solution, following Charlier et al., *Appl. Numer. Math.* **217** (2025) 216–233, with RK4 time stepping);
   - `BQ-2gauss/` — double Gaussian wave packet; same layout.
